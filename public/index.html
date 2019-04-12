@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" href="/manifest.json">
+    <title>DSNLive: Duckball Sports Network Live Feed</title>
+
+    <!-- update the version number as needed -->
+    <!-- <script defer src="/__/firebase/5.9.2/firebase-app.js"></script> -->
+    <!-- <script defer src="/__/firebase/5.9.2/firebase-database.js"></script> -->
+    <!-- <script defer src="/__/firebase/init.js"></script> -->
+
+    <!-- include only the Firebase features as you need -->
+    <!-- <script defer src="/__/firebase/5.9.2/firebase-auth.js"></script> -->
+    <!-- <script defer src="/__/firebase/5.9.2/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/5.9.2/firebase-storage.js"></script> -->
+    <!-- initialize the SDK after all desired features are loaded -->
+    <link rel="icon" type="image/x-icon" href="/imagefiles/favicon.ico" />
+    <link rel="icon" type="image/png" href="/imagefiles/duckhead-icon-16.png" />
+    <link rel="icon" type="image/png" href="/imagefiles/duckhead-icon-32.png" />
+    <link rel="icon" type="image/png" href="/imagefiles/duckhead-icon-64.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Teko:600,700"
+      rel="stylesheet"
+    />
+    <style media="screen">
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        font-size: 0;
+        margin: 0;
+        padding: 0;
+        background-color:#000;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+      }
+      html {
+        font-size: 16px;
+      }
+      canvas {
+        height: 100vh;
+        width: calc(16 / 9 * 100vh);
+        background-color: #000;
+      }
+      #version {
+        font-size: 16px;
+        color:white;
+        text-shadow: 0 0 3px #000;
+        position:fixed;
+        bottom:0;
+        right:0;
+        text-align:left;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <div id='version'>1.4</div>
+    <script type="module" src='/js/main.js'></script>
+    <!-- <script type="module">
+      
+      // document.addEventListener("DOMContentLoaded", function() {
+      //   // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+      //   // // The Firebase SDK is initialized and available here!
+      //   //
+      //   // firebase.auth().onAuthStateChanged(user => { });
+      //   // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+      //   // firebase.messaging().requestPermission().then(() => { });
+      //   // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+      //   //
+      //   // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+      //   try {
+      //     let app = firebase.app();
+      //     let features = ["auth", "database", "messaging", "storage"].filter(
+      //       feature => typeof app[feature] === "function"
+      //     );
+
+      //   } catch (e) {
+      //     console.error(e);
+      //   }
+      // });
+    </script> -->
+  </body>
+</html>
+2

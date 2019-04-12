@@ -1,0 +1,23 @@
+{
+  "name": "dsn-live",
+  "version": "1.0.0",
+  "description": "duckball sports network live feed",
+  "main": "index.html",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "matthew mone",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^5.9.2",
+    "firebase-tools": "^6.5.0",
+    "howler": "^2.1.1"
+  }
+}
